@@ -11,4 +11,4 @@ Hello! I'm an undergraduate at UC Berkeley, where I'm fortunate to work as a res
 
 I'm interested in mathematical and computational biology, focusing on integrating statistical and biological principles with deep learning to understand the relationships between protein sequence, structure, and function. Currently, I'm [exploring this](https://research.berkeley.edu/surf-fellows/matthew-liu/) by using deep structure-based models to learn better models of protein evolution.
 
-In my free time, I enjoy cycling, running, and making Google reviews.
+In my free time, I enjoy cycling, listening to musicals, and making Google reviews.
