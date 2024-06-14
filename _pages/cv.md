@@ -11,54 +11,16 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.A. Computer Science, Applied Mathematics, Statistics, UC Berkeley, 2025; GPA 3.94/4.00
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Summer 2024: Undergraduate Researcher, UC Berkeley
+  * Funded by [UC Berkeley SURF L&S](https://research.berkeley.edu/surf/)
+  * Exploring [deep structure-based models of protein evolution](https://research.berkeley.edu/surf-fellows/matthew-liu/)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Summer 2023: Software Engineering Intern, [Sunscreen Tech](https://sunscreen.tech/)
+  * Building a debugger for an FHE and ZKP compiler
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Summer 2022: Research Intern, Consumer Financial Protection Bureau
+  * Writing [a report](https://www.consumerfinance.gov/data-research/research-reports/consumer-finances-in-rural-appalachia/) on industry and economic trends across Appalachia
