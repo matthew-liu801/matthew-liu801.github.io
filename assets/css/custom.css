@@ -1,21 +1,21 @@
 .teaching-page h2,
 .teaching-page h3 {
-    margin-top: 0.6em; /* Reduce the space above the headers */
-    margin-bottom: 0.3em; /* Reduce the space below the headers */
+    margin-top: 0.65em; /* Reduce the space above the headers */
+    margin-bottom: 0.35em; /* Reduce the space below the headers */
 }
 
 .teaching-page p,
 .teaching-page ul {
-    margin-top: 0.3em; /* Reduce the space above paragraphs and lists */
-    margin-bottom: 0.6em; /* Reduce the space below paragraphs and lists */
+    margin-top: 0.35em; /* Reduce the space above paragraphs and lists */
+    margin-bottom: 0.65em; /* Reduce the space below paragraphs and lists */
 }
 
 .teaching-page .archive__item-title,
 .teaching-page .archive__item-title a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .teaching-page .archive__item-title:hover,
 .teaching-page .archive__item-title a:hover {
-    text-decoration: none !important; /* Ensure it doesn't get underlined on hover */
+    text-decoration: underline 
 }
