@@ -1,11 +1,15 @@
 ---
-title: "Math 54, Linear Algebra & Differential Equations"
+title: "Math 54, Linear Algebra & Differential Equations (UC Berkeley)"
 collection: teaching
 type: "Lower division"
-permalink: /_teaching/math-54
+#permalink: /teaching/math-54
 venue: "UC Berkeley Mathematics"
-date: [2023-01-01, 2024-01-01]
+date: 2022-01-01
 location: "Berkeley, CA"
 ---
-Fall 2023: Prof. Zvezdelina Stankova, average teaching effectiveness rating 6.7/7 <br>
-Spring 2024 (Head TA): Prof. Zvezdelina Stankova
+### Spring 2024:
+- Head TA under Prof. Zvezdelina Stankova
+
+### Fall 2023:
+- TA under Prof. Zvezdelina Stankova
+- Average teaching effectiveness rating: 6.7/7
