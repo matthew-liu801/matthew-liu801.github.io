@@ -7,8 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I'm an undergraduate at UC Berkeley, where I'm fortunate to work as a researcher in [Prof. Yun Song](https://people.eecs.berkeley.edu/~yss/group.html)'s lab. I'll be applying to PhD programs in Fall 2024.
+Hello! I'm an undergraduate at UC Berkeley, where I'm fortunate to work as a researcher in [Prof. Yun Song](https://people.eecs.berkeley.edu/~yss/group.html)'s lab.
 
-I'm interested in mathematical and computational biology, focusing on integrating statistical and biological principles with deep learning to understand the relationships between protein sequence, structure, and function. Currently, I'm [exploring this](https://research.berkeley.edu/surf-fellows/matthew-liu/) by using deep structure-based models to learn better models of protein evolution.
+I'm interested in mathematical and computational biology. 
+Specifically, I want to combine phylogenetics and deep learning to understand protein structure and function through evolution. 
+My research focuses on integrating evolutionary principles with machine learning to uncover insights into protein biology and its role in shaping biological diversity.
 
-In my free time, I enjoy cycling, listening to musicals, and making Google reviews.
+In my free time, I enjoy cycling, playing tennis, and making Google reviews.
