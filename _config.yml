@@ -2,13 +2,14 @@
 title: Matthew Liu
 position: CS Ph.D. Student
 affiliation: Stanford University
+affilation_link: https://www.cs.stanford.edu
 email: matthew.liu (at) cs.stanford.edu
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+keywords: matthew liu
+description: Matthew Liu is a CS PhD student at Stanford.
+canonical: https://matthew-liu801.github.io
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -17,6 +18,7 @@ google_scholar: https://scholar.google.com/
 github_link: https://github.com/matthew-liu801
 linkedin: https://www.linkedin.com/in/matthewliu801/
 twitter: https://x.com/matthewliu801
+bluesky: https://bsky.app/profile/matthew-liu.bsky.social
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
