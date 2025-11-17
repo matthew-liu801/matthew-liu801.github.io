@@ -36,6 +36,26 @@
 
   </head>
   <body>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="theme-toggle-container">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" data-theme-state="light" data-active-icon="sun">
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+            <i class="fa-solid fa-sun"></i>
+          </span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+            <i class="fa-solid fa-moon"></i>
+          </span>
+          <span class="theme-toggle__sr-label">Toggle color mode</span>
+        </button>
+      </div>
+      <div class="site-nav__links">
+        <a class="site-nav__link" href="#about-me">home</a>
+        <a class="site-nav__link" href="#research-interests">research</a>
+        <a class="site-nav__link" href="#news">news</a>
+        <a class="site-nav__link" href="{{ '/assets/files/curriculum_vitae.pdf' | relative_url }}" target="_blank" rel="noopener">cv</a>
+        <a class="site-nav__link" href="{{ site.google_scholar }}" target="_blank" rel="noopener">papers</a>
+      </div>
+    </nav>
     <div class="wrapper">
       <header>
         
@@ -117,6 +137,73 @@
         
       </footer>
     </div>
+    <script>
+      (function() {
+        const storageKey = 'ml-color-scheme';
+        const root = document.documentElement;
+        const toggleButton = document.getElementById('theme-toggle');
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        const readStoredTheme = () => {
+          try {
+            return localStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
+          }
+        };
+
+        const persistTheme = (value) => {
+          try {
+            localStorage.setItem(storageKey, value);
+          } catch (error) {
+            /* no-op */
+          }
+        };
+
+        const applyTheme = (theme) => {
+          root.setAttribute('data-theme', theme);
+          if (toggleButton) {
+            toggleButton.setAttribute('aria-pressed', String(theme === 'dark'));
+            toggleButton.dataset.themeState = theme;
+            toggleButton.dataset.activeIcon = theme === 'dark' ? 'moon' : 'sun';
+          }
+        };
+
+        const resolveInitialTheme = () => {
+          const stored = readStoredTheme();
+          if (stored === 'light' || stored === 'dark') {
+            return stored;
+          }
+          return mediaQuery.matches ? 'dark' : 'light';
+        };
+
+        let activeTheme = resolveInitialTheme();
+        applyTheme(activeTheme);
+
+        if (toggleButton) {
+          toggleButton.addEventListener('click', () => {
+            activeTheme = activeTheme === 'dark' ? 'light' : 'dark';
+            applyTheme(activeTheme);
+            persistTheme(activeTheme);
+          });
+        }
+
+        const handleSystemThemeChange = (event) => {
+          const stored = readStoredTheme();
+          if (stored === 'light' || stored === 'dark') {
+            return;
+          }
+          activeTheme = event.matches ? 'dark' : 'light';
+          applyTheme(activeTheme);
+        };
+
+        if (typeof mediaQuery.addEventListener === 'function') {
+          mediaQuery.addEventListener('change', handleSystemThemeChange);
+        } else if (typeof mediaQuery.addListener === 'function') {
+          mediaQuery.addListener(handleSystemThemeChange);
+        }
+      })();
+    </script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
