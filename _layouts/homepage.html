@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style-no-dark-mode.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/publications-no-dark-mode.css' | relative_url }}">
     {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/theme-overrides.css' | relative_url }}">
 
   </head>
   <body>
@@ -51,7 +52,7 @@
       <header>
         
         {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar | relative_url }}" alt="avatar" style="width:280px;height:auto;" /></a>
+        <a class="image avatar"><img src="{{ site.avatar | relative_url }}" alt="avatar" style="width:280px;height:auto;border-radius:0;" /></a>
         {% endif %}
 
         <h1>{{ site.title }}</h1>

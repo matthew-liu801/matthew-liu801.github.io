@@ -1,0 +1,117 @@
+/* Ensures theme toggle and data-theme dark mode work when main CSS is from theme (e.g. GitHub Pages) */
+:root {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+.theme-toggle-container {
+  position: fixed;
+  top: 1.5rem;
+  left: 2.4rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.theme-toggle {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  padding: 0.25rem;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  width: auto;
+}
+.theme-toggle:focus-visible {
+  outline: 2px solid rgba(62, 183, 240, 0.75);
+  outline-offset: 4px;
+}
+.theme-toggle__icon {
+  display: none;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.theme-toggle[data-active-icon="sun"] .theme-toggle__icon--sun,
+.theme-toggle[data-active-icon="moon"] .theme-toggle__icon--moon {
+  display: inline-flex;
+}
+.theme-toggle__icon--moon {
+  color: #5f8dff;
+  opacity: 0.95;
+}
+.theme-toggle__icon--sun {
+  color: #f8b400;
+}
+.theme-toggle__sr-label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+:root[data-theme="dark"] .theme-toggle {
+  color: #dadbdf;
+}
+:root[data-theme="dark"] .theme-toggle__icon--moon {
+  color: #9bb5ff;
+  opacity: 1;
+}
+:root[data-theme="dark"] .theme-toggle__icon--sun {
+  color: #f8b400;
+}
+:root[data-theme="dark"] .theme-toggle:focus-visible {
+  outline-color: rgba(62, 183, 240, 0.9);
+}
+
+/* Dark mode when data-theme="dark" is set by toggle */
+:root[data-theme="dark"] body {
+  background-color: #20212b;
+  color: #dadbdf;
+}
+:root[data-theme="dark"] autocolor {
+  color: #dadbdf;
+}
+:root[data-theme="dark"] lightonly {
+  visibility: hidden;
+}
+:root[data-theme="dark"] darkonly {
+  visibility: visible;
+}
+:root[data-theme="dark"] papertitle {
+  color: #eeeff0;
+}
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] h4,
+:root[data-theme="dark"] h5,
+:root[data-theme="dark"] h6 {
+  color: rgb(62, 183, 240);
+}
+:root[data-theme="dark"] a {
+  color: rgb(62, 183, 240);
+}
+:root[data-theme="dark"] th,
+:root[data-theme="dark"] dt {
+  color: rgb(62, 183, 240);
+}
+:root[data-theme="dark"] strong {
+  color: #eeeff0;
+}
+
+/* Avatar: force square/rectangular (override theme's round avatar on production) */
+header .image.avatar img,
+.image.avatar img {
+  border-radius: 0 !important;
+}
