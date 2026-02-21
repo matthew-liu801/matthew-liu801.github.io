@@ -24,7 +24,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 @media print, screen and (min-width: 480px) {.col-sm-9 {width: 100%;}}
 
-.publications { margin-top: 2rem; }
+.publications { margin-top: 2rem; margin-bottom: 20px; }
 
 .publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
 
@@ -34,7 +34,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications h2.year { color: #e8e8e8; border-top: 1px solid #e8e8e8; margin-top: 2rem; margin-bottom: 0rem; text-align: right; }
 
-.publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
+.publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; margin-bottom: 0; }
 
 .publications ol.bibliography li { min-height: 110px; margin-bottom: 0.5rem; }
 

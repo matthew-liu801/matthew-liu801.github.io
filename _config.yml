@@ -13,16 +13,15 @@ canonical: https://matthew-liu801.github.io
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
+google_scholar: https://scholar.google.com/citations?user=EDtzCqcAAAAJ&hl=en&authuser=1
+#cv_link: assets/files/curriculum_vitae.pdf
 github_link: https://github.com/matthew-liu801
 linkedin: https://www.linkedin.com/in/matthewliu801/
 twitter: https://x.com/matthewliu801
-bluesky: https://bsky.app/profile/matthew-liu.bsky.social
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.jpg
+avatar: ./assets/img/headshot.jpg
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 
@@ -40,7 +39,7 @@ font: "Serif" # or "Sans Serif"
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-google_analytics: G-1PBPX2L5YT
+# google_analytics: G-1PBPX2L5YT
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll

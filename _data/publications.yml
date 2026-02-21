@@ -1,11 +1,7 @@
 main:
 
-  #- title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-  #  authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-  #  conference_short: MICCAI
-  #  conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-  #  pdf: https://arxiv.org/pdf/2306.00988.pdf
-  #  code: https://github.com/MrGiovanni/ContinualLearning
-  #  bibtex: https://bib.yliu.me/MICCAI23.txt
-  #  image: ./assets/img/teaser_example_2.png
-  #  notes: Early Accept
+  - title: Deep models of protein evolution in time generate realistic evolutionary trajectories and functional proteins
+    authors: Antoine Koehl*, Sebastian Prillo*, <strong>Matthew Liu</strong>, Junhao Xiong, Lillian Weng, David F. Savage, Yun S. Song (*Equal contribution).
+    conference_short: bioRxiv
+    conference: bioRxiv, 2026.
+    pdf: https://www.biorxiv.org/content/10.64898/2026.02.19.706898v1

@@ -4,13 +4,12 @@ layout: homepage
 
 ## About Me
 
-I am a first year Ph.D. student in the Computer Science department at Stanford University. Previously, I was an undergraduate at UC Berkeley, where I studied computer science, math, and statistics.
+I am a first year Ph.D. student in the Computer Science department at Stanford University. My research lies at the intersection of machine learning and molecular biology. Specifically, I work on DNA and protein language models informed by evolution to better understand biological systems, with applications in disease biology and molecular design.
 
-## Research Interests
+Previously, I was an undergraduate at UC Berkeley, where I studied computer science, math, and statistics.
 
-- **Computational Biology:** biological sequence modeling, sequence-based design, human genetics
-- **Machine Learning:** generative models, model efficiency
+{% include publications.md %}
 
 ## News
-
+- **[Feb. 2026]** Preprint on deep models of protein evolution is released!
 - **[Sep. 2025]** Starting my PhD at Stanford!
